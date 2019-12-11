@@ -1,0 +1,101 @@
+.wrapper {
+  float: right;
+  min-height: 100vh;
+  width: 82%;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.sidebar {
+  align-items: center;
+  background: $color-main;
+  box-shadow: $box-shadow; 
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 5rem 0 .5rem 0;
+  position: fixed;
+  width: 18%;
+
+  &__img {
+    width: 50%;
+    border: 1px solid $color-hover;
+
+    @include respond(phone) {
+      float: right;
+      position: absolute;
+      top: 18rem;
+      width: 8rem;
+    }
+  }
+
+  @include respond(phone) {
+    height: 40px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.header {
+  align-items: center; 
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-text, 0.6),
+    rgba($color-text, 0.4)
+  ),
+  url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 19rem;
+  justify-content: center;
+
+  &__title {
+    color: $color-main;
+    font-size: 4rem;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+
+    @include respond(tiny) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.main {
+  padding: 2rem 5rem 10rem;
+
+  &__title {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+
+    @include respond(tiny) {
+      font-size: 2rem;
+    }
+  }
+
+  &__paragraph {
+    padding: 1rem 6rem 0 6rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
+    @include respond(tiny) {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem .3rem;
+  }
+}

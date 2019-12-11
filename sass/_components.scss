@@ -1,0 +1,112 @@
+// SIDE NAVIGATION
+.side-nav {
+  font-size: 2rem;
+  list-style: none;
+  margin-top: 5rem;
+  position: relative;
+
+  &__item {
+    border-bottom: 1px solid transparent;
+    color: $color-link;
+    text-align: center;
+    padding: 1rem 4rem;
+
+    &:hover {
+      border-bottom: 1px solid $color-hover;
+      color: $color-hover;
+      cursor: pointer;
+
+      @include respond(tab-port) {
+        border-bottom: 1px solid transparent;
+      }
+    }
+
+    &--active {
+      color: $color-active;
+    }
+
+    @include respond(phone) {
+      display: inline;
+      padding: 20px;
+    }
+
+    @include respond(tiny) {
+      padding: 5px;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__sub {
+    background-color: $color-main;
+    box-shadow: $box-shadow;
+    border: 1px solid $color-link;
+    float: right;
+    font-size: inherit;
+    padding: 1rem;
+    position: absolute;
+    top: 60%;
+    visibility: hidden;
+    right: -180%;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &__item {      
+      list-style-type: none;
+      border-bottom: 1px solid transparent;
+      color: $color-link;
+      padding: 1rem 2rem;
+
+      &:hover {
+        border-bottom: 1px solid $color-hover;
+        color: $color-hover;
+        cursor: pointer;
+      }
+    }
+
+    &__link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+      top: 40px;
+      right: 0;
+    }
+  }
+
+  &__item__sub:hover + &__sub,
+  &__sub:hover {
+    visibility: visible;
+    transform: translateX(1rem);
+  }
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+.legal {
+  color: $color-text;
+  font-size: 1.05rem;
+  margin-top: auto;
+  padding: 0 10px;
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-link;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+}
