@@ -51,7 +51,7 @@
     position: absolute;
     top: 60%;
     visibility: hidden;
-    right: -180%;
+    right: -190%;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     &__item {      
@@ -76,6 +76,7 @@
       padding: 0;
       top: 40px;
       right: 0;
+      display: none;
     }
   }
 
@@ -96,17 +97,17 @@
   margin-top: auto;
   padding: 0 10px;
 
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-    color: $color-link;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   @include respond(phone) {
     display: none;
   }
+}
+
+.contact  {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }

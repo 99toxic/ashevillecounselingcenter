@@ -17,17 +17,18 @@
   float: left;
   height: 100vh;
   justify-content: space-between;
-  padding: 5rem 0 .5rem 0;
   position: fixed;
   width: 18%;
 
   &__img {
-    width: 50%;
     border: 1px solid $color-hover;
+    margin-top: 5rem;
+    width: 50%;
 
     @include respond(phone) {
       float: right;
       position: absolute;
+      margin-top: 0;
       top: 18rem;
       width: 8rem;
     }
@@ -70,10 +71,9 @@
 }
 
 .main {
-  padding: 2rem 5rem 10rem;
+  padding: 6rem 10rem;
 
   &__title {
-    padding-top: 5rem;
     padding-bottom: 2rem;
     font-size: 2.5rem;
     text-align: center;
@@ -84,18 +84,14 @@
   }
 
   &__paragraph {
-    padding: 1rem 6rem 0 6rem;
-
-    @include respond(phone) {
-      padding: 2rem;
-    }
-
-    @include respond(tiny) {
-      font-size: 1.2rem;
-    }
+    padding-top: 1rem;
   }
 
   @include respond(tab-port) {
-    padding: 2rem .3rem;
+    padding: 3rem 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 3rem;
   }
 }

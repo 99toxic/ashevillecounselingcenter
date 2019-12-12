@@ -1,31 +1,35 @@
 // COLORS
-$color-main: #F0F0F2;
-$color-text: #0D0D0D;
-$color-link: #402A38;
-$color-hover: #9498A6;
-$color-active: #73534C;
+$color-main: #f0f0f2;
+$color-text: #0d0d0d;
+$color-link: #402a38;
+$color-hover: #9498a6;
+$color-active: #73534c;
 
 // BOX SHADOWS
-$box-shadow: 0 1rem 1rem rgba($color-text, .4);
+$box-shadow: 0 1rem 1rem rgba($color-text, 0.4);
 
 // MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {
   @if $breakpoint == tiny {
     @media only screen and (max-width: 25em) {
-      @content
+      @content;
     } // 400px
   }
-  
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
-      @content
+      @content;
     } // 600px
+
+    // If mobile is turned to landscape
+    @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+      @content;
+    } // 432px 600px
   }
 
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
-      @content
+      @content;
     } // 900px
   }
-
 }

@@ -25,6 +25,17 @@ a {
   font-family: "Crimson Text", Arial, Tahoma, sans-serif;
 }
 
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: $color-link;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .bold {
   font-weight: bold;
 }
