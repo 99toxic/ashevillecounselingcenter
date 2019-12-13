@@ -27,11 +27,12 @@ a {
 
 .link:link,
 .link:visited {
-  text-decoration: none;
   color: $color-link;
   font-weight: bold;
+  text-decoration: none;
 
   &:hover {
+    color: $color-hover;
     text-decoration: underline;
   }
 }

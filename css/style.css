@@ -23,11 +23,12 @@ a {
 
 .link:link,
 .link:visited {
-  text-decoration: none;
   color: #402a38;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
   .link:link:hover,
   .link:visited:hover {
+    color: #9498a6;
     text-decoration: underline; }
 
 .bold {
@@ -88,7 +89,7 @@ a {
 
 .header {
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.4)), url(../images/banner.jpg);
+  background-image: linear-gradient(to right bottom, rgba(13, 13, 13, 0.3), rgba(13, 13, 13, 0.4)), url(../images/banner.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -219,12 +220,48 @@ a {
     .legal {
       display: none; } }
 
+.mini-nav {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden; }
+  .mini-nav__item {
+    list-style-type: none;
+    padding: 1rem 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .mini-nav__item:not(:last-child) {
+      border-right: none; } }
+  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+    .mini-nav__item:not(:last-child) {
+      border-right: none; } }
+  @media only screen and (max-width: 37.5em) {
+    .mini-nav {
+      align-items: center;
+      flex-direction: column; } }
+  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+    .mini-nav {
+      align-items: center;
+      flex-direction: column; } }
+
 .contact {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between;
+  padding: 3rem 0; }
+  .contact__icon {
+    margin-right: 3px; }
 
 .form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 60rem;
+  margin: 0 auto; }
+  .form__input, .form__textarea {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    display: block;
+    transition: all 0.3s; }
 
 /*# sourceMappingURL=style.css.map */

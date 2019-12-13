@@ -75,14 +75,16 @@
       </header>
       <main class="main">
         <h2 class="main__title">Asheville Counseling Contact</h2>
-        <div class="contact">
-          <p class="address">
-            <i class="fas fa-map-marker-alt"></i>70 Woodfin Place, Suite 233,
-            Asheville, NC 28801
-          </p>
-          <p class="phone"><i class="fas fa-phone"></i>828-337-7549</p>
-        </div>
         <form action="#" class="form">
+          <div class="contact">
+            <p class="contact__address">
+              <i class="fas fa-map-marker-alt contact__icon"></i>70 Woodfin
+              Place, Suite 233, Asheville, NC 28801
+            </p>
+            <p class="contact__phone">
+              <i class="fas fa-phone contact__icon"></i>828-337-7549
+            </p>
+          </div>
           <div class="form__group">
             <input
               type="text"
@@ -104,17 +106,27 @@
             <label for="email" class="form__label">Email</label>
           </div>
           <div class="form__group">
-              <input
-                type="text"
-                class="form__input"
-                placeholder="Subject"
-                id="subject"
-                required
-              />
-              <label for="subject" class="form__label">Subject</label>
-            </div>
-          <textarea name="textField" cols="30" rows="10" class="form__textarea"></textarea>
-          <input type="submit" name="submit" value="Send" class="form__submit">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Subject"
+              id="subject"
+              required
+            />
+            <label for="subject" class="form__label">Subject</label>
+          </div>
+          <textarea
+            name="textField"
+            cols="30"
+            rows="10"
+            class="form__textarea"
+          ></textarea>
+          <input
+            type="submit"
+            name="submit"
+            value="Send"
+            class="form__submit"
+          />
         </form>
       </main>
     </div>
