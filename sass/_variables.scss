@@ -8,6 +8,9 @@ $color-active: #73534c;
 // BOX SHADOWS
 $box-shadow: 0 1rem 1rem rgba($color-text, 0.4);
 
+// BORDER
+$border: 1px solid $color-hover;
+
 // MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {
   @if $breakpoint == tiny {
