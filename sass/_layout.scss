@@ -11,7 +11,7 @@
 .sidebar {
   align-items: center;
   background: $color-main;
-  box-shadow: $box-shadow; 
+  box-shadow: $box-shadow;
   display: flex;
   flex-direction: column;
   float: left;
@@ -43,13 +43,13 @@
 }
 
 .header {
-  align-items: center; 
+  align-items: center;
   background-image: linear-gradient(
-    to right bottom,
-    rgba($color-text, 0.3),
-    rgba($color-text, 0.4)
-  ),
-  url(../images/banner.jpg);
+      to right bottom,
+      rgba($color-text, 0.3),
+      rgba($color-text, 0.4)
+    ),
+    url(../images/banner.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -87,6 +87,10 @@
     }
   }
 
+  &__h3 {
+    padding-top: 2rem;
+  }
+
   &__paragraph {
     padding-top: 1rem;
   }
@@ -96,6 +100,6 @@
   }
 
   @include respond(phone) {
-    padding: 8rem 3rem;
+    padding: 8rem 3rem 3rem 3rem;
   }
 }
