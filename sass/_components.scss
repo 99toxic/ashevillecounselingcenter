@@ -251,6 +251,12 @@
     transform: translateY(-4rem);
   }
 
+  &__recaptcha {
+    background-color: red;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
   &__submit {
     background: $color-active;
     box-shadow: 3px 3px 3px rgba($color-text, 0.4);
