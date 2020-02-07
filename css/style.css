@@ -39,7 +39,7 @@ a {
   @media only screen and (max-width: 37.5em) {
     .wrapper {
       width: 100%; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .wrapper {
       width: 100%; } }
 
@@ -65,7 +65,7 @@ a {
         margin-top: 0;
         top: 18rem;
         width: 8rem; } }
-    @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+    @media only screen and (max-height: 27em) and (max-width: 37.5em) {
       .sidebar__img {
         float: right;
         position: absolute;
@@ -78,7 +78,7 @@ a {
       padding: 0;
       position: relative;
       width: 100%; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .sidebar {
       height: 40px;
       padding: 0;
@@ -102,7 +102,7 @@ a {
     @media only screen and (max-width: 37.5em) {
       .header__title {
         font-size: 3rem; } }
-    @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+    @media only screen and (max-height: 27em) and (max-width: 37.5em) {
       .header__title {
         font-size: 3rem; } }
     @media only screen and (max-width: 25em) {
@@ -128,7 +128,7 @@ a {
   @media only screen and (max-width: 37.5em) {
     .main {
       padding: 8rem 3rem 3rem 3rem; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .main {
       padding: 8rem 3rem 3rem 3rem; } }
 
@@ -155,7 +155,7 @@ a {
       .side-nav__item {
         display: inline;
         padding: 20px; } }
-    @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+    @media only screen and (max-height: 27em) and (max-width: 37.5em) {
       .side-nav__item {
         display: inline;
         padding: 20px; } }
@@ -198,7 +198,7 @@ a {
   @media only screen and (max-width: 37.5em) {
     .side-nav {
       margin-top: 0; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .side-nav {
       margin-top: 0; } }
 
@@ -210,7 +210,7 @@ a {
   @media only screen and (max-width: 37.5em) {
     .legal {
       display: none; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .legal {
       display: none; } }
 
@@ -224,14 +224,14 @@ a {
   @media only screen and (max-width: 37.5em) {
     .mini-nav__item:not(:last-child) {
       border-right: none; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .mini-nav__item:not(:last-child) {
       border-right: none; } }
   @media only screen and (max-width: 37.5em) {
     .mini-nav {
       align-items: center;
       flex-direction: column; } }
-  @media only screen and (max-height: 27em) and (min-width: 37.5em) {
+  @media only screen and (max-height: 27em) and (max-width: 37.5em) {
     .mini-nav {
       align-items: center;
       flex-direction: column; } }
