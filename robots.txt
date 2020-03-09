@@ -1,2 +1,5 @@
 User-agent:*
-Disallow:/
+Disallow: /sass
+Disallow: /.sass-cache
+Disallow: /.gitignore
+Disallow: /package.json
