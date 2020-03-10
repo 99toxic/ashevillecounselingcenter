@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
     <!--End Favicon-->
 
     <link
@@ -26,6 +26,18 @@
       name="description"
       content="Asheville Counseling Contact for Guy Morganstein LPC. Guy helps individuals reach goals, and create lasting change."
     />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160271593-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-160271593-1");
+    </script>
   </head>
 
   <body>
@@ -42,26 +54,20 @@
           <a href="drug-and-alcohol-problems" class="side-nav__link">Practice</a>
         </li>
         <li class="side-nav__sub">
-        <ul>
-          <li class="side-nav__sub__item">
-            <a href="marriage-counseling" class="side-nav__sub__link"
-              >Marriage Counseling</a
-            >
-          </li>
-          <li class="side-nav__sub__item">
-            <a
-              href="emotional-freedom-techniques"
-              class="side-nav__sub__link"
-              >Emotional Freedom Techniques</a
-            >
-          </li>
-          <li class="side-nav__sub__item">
-            <a href="children-teen-issues" class="side-nav__sub__link"
-              >Children Teen Issues</a
-            >
-          </li>
-        </ul>
-      </li>
+          <ul>
+            <li class="side-nav__sub__item">
+              <a href="marriage-counseling" class="side-nav__sub__link">Marriage Counseling</a>
+            </li>
+            <li class="side-nav__sub__item">
+              <a href="emotional-freedom-techniques" class="side-nav__sub__link"
+                >Emotional Freedom Techniques</a
+              >
+            </li>
+            <li class="side-nav__sub__item">
+              <a href="children-teen-issues" class="side-nav__sub__link">Children Teen Issues</a>
+            </li>
+          </ul>
+        </li>
         <li class="side-nav__item side-nav__item--active">
           <a href="asheville-counseling-contact" class="side-nav__link">Contact</a>
         </li>
@@ -69,9 +75,8 @@
       <div class="legal">
         <p>
           &copy; 2020
-          <a href="https://www.nickscreativedesign.com" class="link"
-            >Nick's Creative Design</a
-          >. All Rights Reserved.
+          <a href="https://www.nickscreativedesign.com" class="link">Nick's Creative Design</a>. All
+          Rights Reserved.
         </p>
       </div>
     </nav>
@@ -86,9 +91,15 @@
             <i class="fas fa-map-marker-alt contact__icon"></i>70 Woodfin Place, Suite 233,
             Asheville, NC 28801
           </p>
-          <a href="mailto:guy@ashevillecounselingcenter.com" class="contact__email link"><i class="fas fa-envelope contact__icon"></i>guy@ashevillecounselingcenter.com</a>
-          <a href="tel:828-337-7549" class="contact__phone link"><i class="fas fa-phone contact__icon"></i>828-337-7549</a>
-          <a href="fax:888-481-2210" class="contact__fax link"><i class="fas fa-fax contact__icon"></i>888-481-2210</a>
+          <a href="mailto:guy@ashevillecounselingcenter.com" class="contact__email link"
+            ><i class="fas fa-envelope contact__icon"></i>guy@ashevillecounselingcenter.com</a
+          >
+          <a href="tel:828-337-7549" class="contact__phone link"
+            ><i class="fas fa-phone contact__icon"></i>828-337-7549</a
+          >
+          <a href="fax:888-481-2210" class="contact__fax link"
+            ><i class="fas fa-fax contact__icon"></i>888-481-2210</a
+          >
           <div class="hours">
             <h3 class="hours__title">Hours</h3>
             <p class="hours__days">Monday - Friday</p>
@@ -98,15 +109,36 @@
           </div>
           <form action="post" action="post" data-netlify="true" class="form">
             <div class="form__group">
-              <input type="text" name="name" class="form__input" placeholder="Name" id="name" required />
+              <input
+                type="text"
+                name="name"
+                class="form__input"
+                placeholder="Name"
+                id="name"
+                required
+              />
               <label for="name" class="form__label">Name</label>
             </div>
             <div class="form__group">
-              <input type="email" name="email" class="form__input" placeholder="Email" id="email" required />
+              <input
+                type="email"
+                name="email"
+                class="form__input"
+                placeholder="Email"
+                id="email"
+                required
+              />
               <label for="email" class="form__label">Email</label>
             </div>
             <div class="form__group">
-              <input type="text" name="subject" class="form__input" placeholder="Subject" id="subject" required />
+              <input
+                type="text"
+                name="subject"
+                class="form__input"
+                placeholder="Subject"
+                id="subject"
+                required
+              />
               <label for="subject" class="form__label">Subject</label>
             </div>
             <textarea name="message" cols="30" rows="10" class="form__textarea"></textarea>
